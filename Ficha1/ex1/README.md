@@ -5,4 +5,5 @@ Caso pretenda saber tambem sobre este curso encontrará mais informações em,
 https://www.codecademy.com
 
 Cumprimentos,
-Isabel Silva
+
+**Furia**
