@@ -4,6 +4,7 @@ body{
   margin: 0;
   padding: 0;
 }
+
 main {
   display: grid;
   grid-template-columns: 350px 350px;
@@ -18,6 +19,7 @@ main {
   grid-auto-row: 500px;
   grid-auto-flow: column;
 }
+
 .logo {
   width: 150px;
   height: 150px;
