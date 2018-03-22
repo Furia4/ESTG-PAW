@@ -6,18 +6,31 @@
 		<meta name="description" content="Resolução ex1 ficha4">
 		<meta name="author" content="Isabel Silva">
 		<meta name="viewport" content="width=device-with, initial-scale="1.0">
-		<link href="#" type="text/css" rel="stylesheet">
+		<link href="./style.css" type="text/css" rel="stylesheet">
     
 		<title>Galerie</title>
 	</head>
 	<body>
-		<div class="imagens">
-			<ul>
-				<li><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" /></li>
-				<li><img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" /></li>
-				<li><img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Badge_js-strict.svg" /></li>
-				<li><img src="https://cdn-images-1.medium.com/max/1600/0*g3ns8QALNBBH7CBA." /></li>
-			</ul>
+		<div class="container">
+	
+			<img id="expandedImg" style="width:60%">
+
+			<script src="./expand.js"></script>
 		</div>
+		<div>
+			<div class="gallery">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" with="150" height="150" alt="HTML5" onclick="openImg(this);" />
+			</div>
+			<div class="gallery">
+				<img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" with="150" height="150" alt="CSS" onclick="openImg(this);" />
+			</div>
+			<div class="gallery">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Badge_js-strict.svg" with="150" height="150" alt="JavaScript" onclick="openImg(this);" />
+			</div>
+			<div class="gallery">
+				<img src="https://cdn-images-1.medium.com/max/1600/0*g3ns8QALNBBH7CBA." with="150" height="150" alt="JavaQuery" onclick="openImg(this);" />
+			</div>
+		</div>
+		
 	</body>
 </html>
