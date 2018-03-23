@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Resolução ex3 ficha4">
+		<meta name="author" content="Isabel Silva">
+		<meta name="viewport" content="width=device-with, initial-scale="1.0">
+		<link href="./style.css" type="text/css" rel="stylesheet">
+		<title>Registar informação do cliente</title>
+	</head>
+	<body>
+		<form>
+			<h4>Morada preferencial:</h4>
+			<input type="radio" name="typeMorada" value="Casa"> Casa<br>
+			<input type="radio" name="typeMorada" value="Profissional"> Profissional<br>
+			<h4>Titulo*</h4>
+			<select name="Titulo">
+			    <option value="Socio">Socio</option>
+			    <option value="NaoSocio">Não associado</option>
+			</select><br>
+			<h4>Nome*</h4>
+			<input name="Nome" type="text"><br>
+			<h4>Apelido*</h4>
+			<input name="Apelido" type="text"><br>
+			<h4>Email*</h4>
+			<input name="Email" type="email"><br>
+			<h4>Confirmar Email*</h4>
+			<input name="ConfirmarEmail" type="email"><br>
+			<h4>Código Postal*</h4>
+			<input name="CodigoPostal" type="text"><br>
+			<h4>País*</h4>
+			<select name="País">
+			    <option value="Portugal">Portugal</option>
+			    <option value="Espanha">Espanha</option>
+			    <option value="Brasil">Brasil</option>
+			    <option value="França">França</option>
+			    <option value="Itália">Itália</option>
+			</select><br>
+			<h4>Nº de Telefone*</h4>
+			<input name="NTelefone" type="usrtel"><br>
+			<h5>Detalhes do Condutor</h5><br>
+			<h4>Data de nascimento*</h4>
+			<select name="Dia">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="8">8</option>
+			</select><br>
+			<select name="Mes">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="8">8</option>
+			</select><br>
+			<select name="Ano">
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+				<option value="2003">2003</option>
+				<option value="2004">2004</option>
+				<option value="2005">2005</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>
+			</select><br>
+			<h4>Nova password*</h4>
+			<input type="password" name="psw">
+			<h4>Confirmar password*</h4>
+			<input type="password" name="psw">
+			<h4>Nº da Carta de Condução</h4>
+			<input type="number" name="quantity" min="111111111" max="999999999">
+			<input type="radio" name="TCG" value="Termos"> Aceito os Termos e Condições Gerais<br>
+			<input type="submit">
+		</form>
+	</body>
+</html>
