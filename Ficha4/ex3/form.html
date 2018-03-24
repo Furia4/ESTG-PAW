@@ -11,77 +11,88 @@
 	</head>
 	<body>
 		<form>
-			<h4>Morada preferencial:</h4>
-			<input type="radio" name="typeMorada" value="Casa"> Casa<br>
-			<input type="radio" name="typeMorada" value="Profissional"> Profissional<br>
-			<h4>Titulo*</h4>
-			<select name="Titulo">
-			    <option value="Socio">Socio</option>
-			    <option value="NaoSocio">Não associado</option>
-			</select><br>
-			<h4>Nome*</h4>
-			<input name="Nome" type="text"><br>
-			<h4>Apelido*</h4>
-			<input name="Apelido" type="text"><br>
-			<h4>Email*</h4>
-			<input name="Email" type="email"><br>
-			<h4>Confirmar Email*</h4>
-			<input name="ConfirmarEmail" type="email"><br>
-			<h4>Código Postal*</h4>
-			<input name="CodigoPostal" type="text"><br>
-			<h4>País*</h4>
-			<select name="País">
-			    <option value="Portugal">Portugal</option>
-			    <option value="Espanha">Espanha</option>
-			    <option value="Brasil">Brasil</option>
-			    <option value="França">França</option>
-			    <option value="Itália">Itália</option>
-			</select><br>
-			<h4>Nº de Telefone*</h4>
-			<input name="NTelefone" type="usrtel"><br>
-			<h5>Detalhes do Condutor</h5><br>
-			<h4>Data de nascimento*</h4>
-			<select name="Dia">
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="8">8</option>
-			</select><br>
-			<select name="Mes">
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="8">8</option>
-			</select><br>
-			<select name="Ano">
-				<option value="2000">2000</option>
-				<option value="2001">2001</option>
-				<option value="2002">2002</option>
-				<option value="2003">2003</option>
-				<option value="2004">2004</option>
-				<option value="2005">2005</option>
-				<option value="2006">2006</option>
-				<option value="2007">2007</option>
-				<option value="2008">2008</option>
-			</select><br>
-			<h4>Nova password*</h4>
-			<input type="password" name="psw">
-			<h4>Confirmar password*</h4>
-			<input type="password" name="psw">
-			<h4>Nº da Carta de Condução</h4>
-			<input type="number" name="quantity" min="111111111" max="999999999">
-			<input type="radio" name="TCG" value="Termos"> Aceito os Termos e Condições Gerais<br>
-			<input type="submit">
+			<label for="typemorada">Morada preferencial*: </label><br><br>
+			<div>
+				<label class="container">Casa
+				  <input type="radio" checked="checked" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Profissional
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+			</div>
+			<br><br>
+			<div>
+				<label for="typemorada">Titulo*: </label><br>
+				<select id="title" name="Titulo">
+				    <option value="Socio">Socio</option>
+				    <option value="NaoSocio">Não associado</option>
+				</select>
+			</div>
+			<br><br>
+			<div>
+				<label for="nome">Nome*: </label><br>
+				<input id="name" name="Nome" type="text" placeholder="Your first name..."><br><br>
+				<label for="apelido">Apelido*: </label><br>
+				<input id="lastname" name="Apelido" type="text" placeholder="Your last name..."><br><br>
+				<label for="email">Email*: </label>
+				<input id="e-mail" name="Email" type="email" placeholder="Your email ..."><br><br>
+				<label for="confiemail">Confirmar e-mail*: </label>
+				<input name="ConfirmarEmail" type="email" placeholder="Confirm your email..."><br><br>
+				<label for="codigopostal">Codigo Postal*: </label>
+				<input name="CodigoPostal" type="text-code">
+			</div>
+			<br>
+			<div>
+				<label for="pais">Pais*: </label>
+				<select id="Pais" name="País">
+				    <option value=" "> </option>
+				    <option value="Portugal">Portugal</option>
+				    <option value="Espanha">Espanha</option>
+				    <option value="Brasil">Brasil</option>
+				    <option value="França">França</option>
+				    <option value="Itália">Itália</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<label for="ntelefone">Nº de Telefone*: </label>
+				<input id="contact" name="NTelefone" type="usrtel">
+			</div>
+			<br><hr align="center" width="800" size="1" color=grey>
+			<h4>Detalhes do Condutor</h4>
+			<div>
+				<label for="datanascimento">Data de nascimento*: </label><br>
+				<div>
+					<input id="day" type="number" name="quantity" min="1" max="31">
+					<input id="month" type="number" name="quantity" min="1" max="12">
+					<input id="year" type="number" name="quantity" min="1970" max="2017">
+				</div>
+			</div>
+			<br><br>
+			<div>
+				<label for="ncarta">Nº Carta de Condução*: </label>
+				<input id="ncd" type="number" name="quantity" min="111111111" max="999999999">
+			</div><br><br>
+			<div>
+				<div>
+					<label for="password">Nova Password*: </label>
+					<input id="pass" type="password" name="psw">	
+					<label for="confpassword">Confirmar Password*: </label>
+					<input id="confipass" type="password" name="psw">
+				</div><br>
+			</div>
+			<br><hr align="center" width="800" size="1" color=grey><br><br><br>
+			<div>
+				<label class="container">Aceito os Termos e Condições Gerais
+				  <input type="radio" checked="checked" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+			</div><br><br>
+			<div>
+				<input type="submit" value="Criar novo perfil">
+			</div>
 		</form>
 	</body>
 </html>
