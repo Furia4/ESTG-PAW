@@ -10,11 +10,12 @@
 		<title>Registar informação do cliente</title>
 	</head>
 	<body>
+		
 		<form>
-			<label for="typemorada">Morada preferencial*: </label><br><br>
+			<label for="typemorada">Morada preferencial: </label><br><br>
 			<div>
 				<label class="container">Casa
-				  <input type="radio" checked="checked" name="radio">
+				  <input type="radio" name="radio">
 				  <span class="checkmark"></span>
 				</label>
 				<label class="container">Profissional
@@ -47,7 +48,6 @@
 			<div>
 				<label for="pais">Pais*: </label>
 				<select id="Pais" name="País">
-				    <option value=" "> </option>
 				    <option value="Portugal">Portugal</option>
 				    <option value="Espanha">Espanha</option>
 				    <option value="Brasil">Brasil</option>
@@ -57,7 +57,7 @@
 			</div>
 			<br>
 			<div>
-				<label for="ntelefone">Nº de Telefone*: </label>
+				<label for="ntelefone">Nº de Telefone: </label>
 				<input id="contact" name="NTelefone" type="usrtel">
 			</div>
 			<br><hr align="center" width="800" size="1" color=grey>
@@ -73,26 +73,28 @@
 			<br><br>
 			<div>
 				<label for="ncarta">Nº Carta de Condução*: </label>
-				<input id="ncd" type="number" name="quantity" min="111111111" max="999999999">
+				<input id="ncd" type="number" name="carta" min="111111111" max="999999999">
 			</div><br><br>
 			<div>
 				<div>
 					<label for="password">Nova Password*: </label>
-					<input id="pass" type="password" name="psw">	
+					<input id="pass" type="password" name="psw1">	
 					<label for="confpassword">Confirmar Password*: </label>
-					<input id="confipass" type="password" name="psw">
+					<input id="confipass" type="password" name="psw2">
 				</div><br>
 			</div>
 			<br><hr align="center" width="800" size="1" color=grey><br><br><br>
 			<div>
 				<label class="container">Aceito os Termos e Condições Gerais
-				  <input type="radio" checked="checked" name="radio">
+				  <input type="radio" checked="checked" name="condicoes">
 				  <span class="checkmark"></span>
 				</label>
 			</div><br><br>
 			<div>
-				<input type="submit" value="Criar novo perfil">
+				<button id="mybtn" disabled="valida_form()">Submeter</button>
 			</div>
+			<script src="./formulariovalidacoes.js"></script>
 		</form>
+		
 	</body>
 </html>
