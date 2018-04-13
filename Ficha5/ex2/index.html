@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-with, initial-scale="1.0">
+		<meta name="description" content="Resolução ex2 ficha5">	
+		<meta name="author" content="Isabel Silva">
+		<link href="./st  yle.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  
+		<script>
+			$(document).ready(function() {
+				$('#btn').click(function() {
+					var countries = [];
+					$.getJSON('countries.json', function(data) {
+						$.each(data.countries, function(i, f) {
+							var linha = "<p>" + "<strong>Code:</strong>" + f.code + "</br>" + "<strong>Full name:</strong>" + f.name + "</p>"; 
+		  					$(linha).appendTo(".wrapper");
+						});
+					});
+				});
+			}); 
+		</script>
+
+	</head>
+	<body>
+		<div>
+		   <input id="btn" type="button" value="List Countries data" />
+		</div>
+		<div class="wrapper">
+		</div>
+	</body>
+</html>
