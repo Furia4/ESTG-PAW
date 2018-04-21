@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Read JASON</title>
+  </head>
+  <body>
+
+    <ul id="demo" onclick="my()">Please</ul>
+    <script>
+        function my(){
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                var response = JSON.parse(xhttp.responseText);
+                var people = response.people;
+
+                var output = '';
+                for(var i = 0;i < people.length;i++){
+                  output += '<li>'+people[i].NOME +'</li>';
+                }
+                document.getElementById('demo').innerHTML = output;
+              }
+          };
+          xhttp.open("GET", "dados.json", true);
+          xhttp.send();
+        }
+    </script>
+
+  </body>
+</html>

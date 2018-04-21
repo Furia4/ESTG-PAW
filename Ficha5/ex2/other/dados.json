@@ -1,0 +1,33 @@
+{
+"people": [
+    {
+        "CODIGO": "1",
+        "NOME": "Diego Cavalca",
+        "TELEFONE": "(14)98888-7777",
+        "EMAIL": "diegocavalca.ti@gmail.com"
+    },
+    {
+        "CODIGO": "2",
+        "NOME": "Luiz Carlos",
+        "TELEFONE": "(99)87777-6666",
+        "EMAIL": "luizcarlos@email.com"
+    },
+    {
+        "CODIGO": "3",
+        "NOME": "Jos Fulano",
+        "TELEFONE": "(55)43333-2222",
+        "EMAIL": "j.fulano@email.com"
+    },
+    {
+        "CODIGO": "4",
+        "NOME": "Jo dos Santos",
+        "TELEFONE": "(11)21111-0000",
+        "EMAIL": "joaodossantos@email.com.br"
+    },
+    {
+        "CODIGO": "5",
+        "NOME": "Maria da Silva",
+        "TELEFONE": "(44)65555-8888",
+        "EMAIL": "luizcarlos@email.com"
+    }
+]}
