@@ -24,7 +24,7 @@ http.createServer(function (request, response) {
         '.woff': 'application/font-woff',
         '.ttf': 'application/font-ttf',
         '.eot': 'application/vnd.ms-fontobject',
-        '.otf': 'application/font-otf',
+	'.otf': 'application/font-otf',
         '.svg': 'application/image/svg+xml'
     };
 
