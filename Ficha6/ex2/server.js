@@ -1,14 +1,43 @@
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
+var qs = require('querystring');
 
 http.createServer(function (request, response) {
+
     console.log('request ', request.url);
 
     var filePath = '.' + request.url;
+
+
     if (filePath == './') {
-        filePath = './index.html';
+        filePath = './form.html';
     }
+
+
+    if (request.method == 'POST') {
+        var body = '';
+
+        request.on('data', function (file) {
+        	body += file;
+
+        });
+        
+        request.on('end', function () {
+        	var post = qs.parse(body);
+                // use post['blah'], etc.
+                console.log(post);
+
+                response.end(JSON.stringify(post));
+        });
+
+    }
+
+    if(request.url == '/form'){
+        console.log('Entrou em outra pagina');
+        response.end();
+    }
+
 
     var extname = String(path.extname(filePath)).toLowerCase();
     var mimeTypes = {
@@ -24,7 +53,7 @@ http.createServer(function (request, response) {
         '.woff': 'application/font-woff',
         '.ttf': 'application/font-ttf',
         '.eot': 'application/vnd.ms-fontobject',
-	'.otf': 'application/font-otf',
+	    '.otf': 'application/font-otf',
         '.svg': 'application/image/svg+xml'
     };
 
@@ -50,5 +79,5 @@ http.createServer(function (request, response) {
         }
     });
 
-}).listen(8125);
+}).listen(8000);
 console.log('Server running at http://127.0.0.1:8125/');

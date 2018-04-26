@@ -7,8 +7,9 @@ http.createServer(function (request, response) {
 
     var filePath = '.' + request.url;
     if (filePath == './') {
-        filePath = './index.html';
+        filePath = './countries.json';
     }
+
 
     var extname = String(path.extname(filePath)).toLowerCase();
     var mimeTypes = {

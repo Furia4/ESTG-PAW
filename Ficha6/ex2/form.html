@@ -5,13 +5,13 @@
 		<meta charset="UTF-8">
 		<meta name="description" content="Resolução ex3 ficha4">
 		<meta name="author" content="Isabel Silva">
-		<meta name="viewport" content="width=device-with, initial-scale="1.0">
+		<meta name="viewport" content="width=device-with, initial-scale=1">
 		<link href="./style.css" type="text/css" rel="stylesheet">
 		<title>Registar informação do cliente</title>
 	</head>
 	<body>
 		
-		<form>
+		<form action="/form" method="post">
 			<label for="typemorada">Morada preferencial: </label><br><br>
 			<div>
 				<label class="container">Casa
@@ -26,7 +26,7 @@
 			<br><br>
 			<div>
 				<label for="typemorada">Titulo*: </label><br>
-				<select id="title" name="Titulo">
+				<select id="typemorada" name="Titulo">
 				    <option value="Socio">Socio</option>
 				    <option value="NaoSocio">Não associado</option>
 				</select>
@@ -34,14 +34,14 @@
 			<br><br>
 			<div>
 				<label for="nome">Nome*: </label><br>
-				<input id="name" name="Nome" type="text" placeholder="Your first name..."><br><br>
+				<input id="nome" name="Nome" type="text" placeholder="Your first name..."><br><br>
 				<label for="apelido">Apelido*: </label><br>
-				<input id="lastname" name="Apelido" type="text" placeholder="Your last name..."><br><br>
+				<input id="apelido" name="Apelido" type="text" placeholder="Your last name..."><br><br>
 				<label for="email">Email*: </label>
-				<input id="e-mail" name="Email" type="email" placeholder="Your email ..."><br><br>
-				<label for="confiemail">Confirmar e-mail*: </label>
+				<input id="email" name="Email" type="email" placeholder="Your email ..."><br><br>
+				<label>Confirmar e-mail*: </label>
 				<input name="ConfirmarEmail" type="email" placeholder="Confirm your email..."><br><br>
-				<label for="codigopostal">Codigo Postal*: </label>
+				<label>Codigo Postal*: </label>
 				<input name="CodigoPostal" type="text-code">
 			</div>
 			<br>
@@ -57,13 +57,13 @@
 			</div>
 			<br>
 			<div>
-				<label for="ntelefone">Nº de Telefone: </label>
+				<label>Nº de Telefone: </label>
 				<input id="contact" name="NTelefone" type="usrtel">
 			</div>
 			<br><hr align="center" width="800" size="1" color=grey>
 			<h4>Detalhes do Condutor</h4>
 			<div>
-				<label for="datanascimento">Data de nascimento*: </label><br>
+				<label>Data de nascimento*: </label><br>
 				<div>
 					<input id="day" type="number" name="quantity" min="1" max="31">
 					<input id="month" type="number" name="quantity" min="1" max="12">
@@ -72,14 +72,14 @@
 			</div>
 			<br><br>
 			<div>
-				<label for="ncarta">Nº Carta de Condução*: </label>
+				<label>Nº Carta de Condução*: </label>
 				<input id="ncd" type="number" name="carta" min="111111111" max="999999999">
 			</div><br><br>
 			<div>
 				<div>
-					<label for="password">Nova Password*: </label>
+					<label>Nova Password*: </label>
 					<input id="pass" type="password" name="psw1">	
-					<label for="confpassword">Confirmar Password*: </label>
+					<label>Confirmar Password*: </label>
 					<input id="confipass" type="password" name="psw2">
 				</div><br>
 			</div>
@@ -91,9 +91,8 @@
 				</label>
 			</div><br><br>
 			<div>
-				<button id="mybtn" disabled="valida_form()">Submeter</button>
+				<button id="mybtn">Submeter</button>
 			</div>
-			<script src="./formulariovalidacoes.js"></script>
 		</form>
 		
 	</body>
