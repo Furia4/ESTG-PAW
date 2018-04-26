@@ -1,0 +1,28 @@
+body{
+	background-color: #b7b4db;
+	margin: 25px;
+	padding: 0;
+}
+.gallery img{
+	cursor: pointer;
+}
+
+.gallery{
+	margin: 5px;
+	padding: 10 10px;
+	float: left;
+	width: 25%;
+	margin: 0;
+	position: relative;
+}
+
+/* Expandir a imagem */
+
+
+.container {
+	position: relative;
+	display: none;
+	width: 400px;
+	height: 400px;
+	text-align: center;
+}
