@@ -1,0 +1,67 @@
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='description' content='Resolucao da ficha7 ex3')
+        meta(name='author' content='Isabel Silva')
+        meta(name='viewport' content='width=device-with, initial-scale=1')
+        link(href='./style.css' type='text/css' rel='stylesheet')
+        title Registar informação do cliente
+    body
+        form(method='POST' action='/form')
+            div
+                label Morada Preferencial
+                div
+                    label(class='constainer') Casa
+                        input(type='radio' name='')
+                        span(class='chechmark')
+
+                    label(class='constainer') Profisional
+                        input(type='radio' name='radio')
+                        span(class='chechmark')
+            div
+                label(for='typetitle') Titulo:
+                select(id='typetitle' name='Titulo')
+                    option(value='Socio') Socio:
+                    option(value='NSocio') Não Socio:
+            br
+            div
+                label(for='nome') Nome:
+                input(type='text' name='Nome' id='nome' placeholder='Your first name...')
+                br
+                label(for='apelido') Apelido:
+                input(type='text' name='Apelido' id='apelido' placeholder='Your last name...')
+                br
+                label(for='email') Email:
+                input(type='text' name='Email' id='email' placeholder='Your email...')
+                br
+                label Confirmar e-mail:
+                input(type='email' name='ConfirmarEmail' placeholder='Confirm your email...')
+                br
+                label Codigo Postal:
+                input(type='text-code' name='CodigoPostal')
+                br
+            div
+                label(for='pais') Pais:
+                    select(id='pais' name='pais')
+                        option(value='Portugal') Portugal
+                        option(value='Espanha') Espanha
+                        option(value='Brasil') Brasil
+                        option(value='França') França
+                        option(value='Itália') Itália
+            br
+            hr(align='center' width='800' size='1' color='grey')
+            h4 Detalhes do Condutor
+            div
+                label Data de nascimento:
+                input(id='data' type='date')
+            br
+            div
+                label Nº Carta de Condução:
+                input(id='ncd' type='number' name='carta')
+            br
+            div
+                div
+                    label Password:
+                    input(id='pas' type='password' name='pas')
+            div
+                button(id='mybtn') Submeter
